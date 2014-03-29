@@ -1,0 +1,95 @@
+body{
+background: Grey;
+color: Dark Grey;
+}
+nav ul{
+list-style-type: none;
+}
+
+nav ul li{
+float: left;
+margin: 0 5px
+}
+
+nav ul li a{
+display: block;
+color: cornsilk;
+background: Crimson;
+width: 250px;
+height: 150px;
+font-size: 2em;
+font-style: none;
+text-decoration: none;
+text-align: center;
+}
+
+nav{
+width: 90%;
+margin: 0 auto;
+}
+
+nav ul li a:hover{
+background: cornsilk;
+color: Crimson;
+}
+
+h1{
+text-align: center
+}
+
+h2{
+color: Red;
+}
+
+ul{
+color: Pink;
+}
+
+ol{
+color: Green;
+}
+
+.yellow{
+color: yellow;
+}
+
+.brown{
+color: brown;
+}
+
+.red{
+position: relative;
+background: Red;
+width: 100px;
+height: 100px;
+margin: 100px 0 0 575px;
+z-index: 10;
+}
+
+.blue{
+background: Blue;
+width: 100px;
+height: 100px;
+margin: -50px 0 0 625px;
+z-index: 1;
+}
+
+.blue:hover{
+background: DarkGrey;
+width: 200px;
+height: 200px;
+}
+
+img:hover{
+opacity: .5;
+border: 20px Pink groove;
+transform: skew(35deg);
+-webkit-transform: skew(35deg);
+}
+
+#clear{
+clear:both;
+}
+#show{
+font-size:3em;
+}

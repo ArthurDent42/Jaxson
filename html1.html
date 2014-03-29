@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+
+<head>
+<title>This is a page.</title>
+<link rel="stylesheet" type="text/css" href="css1.css"/>
+</head>
+
+<body>
+<div id="js">
+<script>
+document.write("Hello World, this is Jaxson.");
+var today = new Date ();
+document.write("<br>");
+document.write(today);
+document.write("<br>");
+document.write(today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear());
+
+var rand = Math.random();
+var rand1 = Math.floor(rand*6);
+document.write("<br>");
+document.write(rand);
+document.write("<br>");
+document.write(rand1);
+</script>
+</div>
+<form>
+<input id="name" placeholder="What is your name?">
+<input id="city" placeholder="What City would you like to visit?" size="30">
+<button id="button">Enter</button>
+</form>
+<div id="show"></div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#js").hide();
+	var fortune = [", you will die in a pit",", you will die underwater",", you will die on the Moon",", you will die in a fire"];
+	var fortune1 = [" when you visit that city."," if you don't visit that city."];
+	$("#button").click(function(event){
+		event.preventDefault();
+		var rand = Math.random();
+		var rand1 = Math.floor(rand*4);
+		var rand2 = Math.floor(rand*2);
+		var name = $("#name").val();
+		var city = $("#city").val()
+		$("#show").html("Welcome, "+name + fortune[rand1] + fortune1[rand2]);
+		
+
+	});
+	
+});
+</script>
+</body>
+
+</html>
